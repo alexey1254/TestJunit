@@ -6,7 +6,7 @@ import java.util.*;
 
 /**
  * @author jpexposito
- * Clase que implementa un carrito de la compra
+ *         Clase que implementa un carrito de la compra
  */
 public class Carrito {
 
@@ -14,6 +14,7 @@ public class Carrito {
 
     /**
      * Funcion que permite incluir un elemento en el carrito de
+     * 
      * @param producto Producto que se desea incluir
      * @param cantidad Cantidad de elementos que se desean incluir
      */
@@ -25,8 +26,13 @@ public class Carrito {
         }
     }
 
+    public TreeMap<Producto, Integer> getProductosComprados() {
+        return (TreeMap<Producto, Integer>) this.productosComprados;
+    }
+
     /**
      * Funcion que realiza el calculo del precio del carrito
+     * 
      * @return Double con el precio del carrito
      */
     public double totalCarrito() {
